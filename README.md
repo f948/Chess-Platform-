@@ -1,1 +1,1 @@
-# Chess-Platform-
+# Online multiplayer chess-
