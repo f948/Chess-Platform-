@@ -1,0 +1,1674 @@
+<html>
+<head>
+	<style>
+		table, td {
+		border: 1px solid black;
+		width 10px;
+		}
+	</style>
+	<title> Chess Application</title>
+</head>
+<body>
+	<table>
+	<tr>
+	<td><img width = "64" height="64" id="BlackRook"name="11" onclick="clickEventHandler(11)"onmouseover="showName(11)"></td>
+    <td><img width = "64" height="64" id="BlackKnight"name="12"  onclick="clickEventHandler(12)"onmouseover="showName(12)"></td>
+	<td><img width = "64" height="64" id="BlackBishop"name="13"  onclick="clickEventHandler(13)"onmouseover="showName(13)"></td>
+	<td><img width = "64" height="64" id="BlackQueen"name="14" onclick="clickEventHandler(14)"onmouseover="showName(14)"></td>
+	<td><img width = "64" height="64" id="BlackKing"name="15"  onclick="clickEventHandler(15)"onmouseover="showName(15)"></td>
+    <td><img width = "64" height="64" id="BlackBishop"name="16"  onclick="clickEventHandler(16)"onmouseover="showName(16)"></td>
+	<td><img width = "64" height="64" id="BlackKnight"name="17"  onclick="clickEventHandler(17)"onmouseover="showName(17)"></td>
+	<td><img width = "64" height="64" id="BlackRook"name="18"  onclick="clickEventHandler(18)"onmouseover="showName(18)"></td>
+  </tr>
+  <tr>
+	<td><img width = "64" height="64" id="BlackPawn"name="21"onclick="clickEventHandler(21)"onmouseover="showName(21)"></td>
+	<td><img width = "64" height="64" id="BlackPawn"name="22"onclick="clickEventHandler(22)"onmouseover="showName(22)"></td>
+	<td><img width = "64" height="64" id="BlackPawn"name="23"onclick="clickEventHandler(23)"onmouseover="showName(23)"></td>
+    <td><img width = "64" height="64" id="BlackPawn"name="24"onclick="clickEventHandler(24)"onmouseover="showName(24)"></td>
+	<td><img width = "64" height="64" id="BlackPawn"name="25"onclick="clickEventHandler(25)"onmouseover="showName(25)"></td>
+	<td><img width = "64" height="64" id="BlackPawn"name="26"onclick="clickEventHandler(26)"onmouseover="showName(26)"></td>
+	<td><img width = "64" height="64" id="BlackPawn"name="27"onclick="clickEventHandler(27)"onmouseover="showName(27)"></td>
+    <td><img width = "64" height="64" id="BlackPawn"name="28"onclick="clickEventHandler(28)"onmouseover="showName(28)"></td>
+  </tr>
+  <tr>
+	<td><img width = "64" height="64" id="Empty"name="31"onclick="clickEventHandler(31)"onmouseover="showName(31)"></td>
+	<td><img width = "64" height="64" id="Empty"name="32"onclick="clickEventHandler(32)"onmouseover="showName(32)"></td>
+	<td><img width = "64" height="64" id="Empty"name="33"onclick="clickEventHandler(33)"onmouseover="showName(33)"></td>
+	<td><img width = "64" height="64" id="Empty"name="34"onclick="clickEventHandler(34)"onmouseover="showName(34)"></td>
+	<td><img width = "64" height="64" id="Empty"name="35"onclick="clickEventHandler(35)"onmouseover="showName(35)"></td>
+    <td><img width = "64" height="64" id="Empty"name="36"onclick="clickEventHandler(36)"onmouseover="showName(36)"></td>
+	<td><img width = "64" height="64" id="Empty"name="37"onclick="clickEventHandler(37)"onmouseover="showName(37)"></td>
+	<td><img width = "64" height="64" id="Empty"name="38"onclick="clickEventHandler(38)"onmouseover="showName(38)"></td>
+  </tr>
+  <tr>
+	<td><img width = "64" height="64" id="Empty"name="41"onclick="clickEventHandler(41)"onmouseover="showName(41)"></td>
+    <td><img width = "64" height="64" id="Empty"name="42"onclick="clickEventHandler(42)"onmouseover="showName(42)"></td>
+	<td><img width = "64" height="64" id="Empty"name="43"onclick="clickEventHandler(43)"onmouseover="showName(43)"></td>
+	<td><img width = "64" height="64" id="Empty"name="44"onclick="clickEventHandler(44)"onmouseover="showName(44)"></td>
+	<td><img width = "64" height="64" id="Empty"name="45"onclick="clickEventHandler(45)"onmouseover="showName(45)"></td>
+	<td><img width = "64" height="64" id="Empty"name="46"onclick="clickEventHandler(46)"onmouseover="showName(46)"></td>
+	<td><img width = "64" height="64" id="Empty"name="47"onclick="clickEventHandler(47)"onmouseover="showName(47)"></td>
+    <td><img width = "64" height="64" id="Empty"name="48"onclick="clickEventHandler(48)"onmouseover="showName(48)"></td>
+  </tr>
+  <tr>
+	<td><img width = "64" height="64" id="Empty"name="51"onclick="clickEventHandler(51)"onmouseover="showName(51)"></td>
+	<td><img width = "64" height="64" id="Empty"name="52"onclick="clickEventHandler(52)"onmouseover="showName(52)"></td>
+	<td><img width = "64" height="64" id="Empty"name="53"onclick="clickEventHandler(53)"onmouseover="showName(53)"></td>
+    <td><img width = "64" height="64" id="Empty"name="54"onclick="clickEventHandler(54)"onmouseover="showName(54)"></td>
+	<td><img width = "64" height="64" id="Empty"name="55"onclick="clickEventHandler(55)"onmouseover="showName(55)"></td>
+	<td><img width = "64" height="64" id="Empty"name="56"onclick="clickEventHandler(56)"onmouseover="showName(56)"></td>
+	<td><img width = "64" height="64" id="Empty"name="57"onclick="clickEventHandler(57)"onmouseover="showName(57)"></td>
+	<td><img width = "64" height="64" id="Empty"name="58"onclick="clickEventHandler(58)"onmouseover="showName(58)"></td>
+  </tr>
+  <tr>
+	<td><img width = "64" height="64" id="Empty"name="61"onclick="clickEventHandler(61)"onmouseover="showName(61)"></td>
+	<td><img width = "64" height="64" id="Empty"name="62"onclick="clickEventHandler(62)"onmouseover="showName(62)"></td>
+	<td><img width = "64" height="64" id="Empty"name="63"onclick="clickEventHandler(63)"onmouseover="showName(63)"></td>
+	<td><img width = "64" height="64" id="Empty"name="64"onclick="clickEventHandler(64)"onmouseover="showName(64)"></td>
+	<td><img width = "64" height="64" id="Empty"name="65"onclick="clickEventHandler(65)"onmouseover="showName(65)"></td>
+    <td><img width = "64" height="64" id="Empty"name="66"onclick="clickEventHandler(66)"onmouseover="showName(66)"></td>
+	<td><img width = "64" height="64" id="Empty"name="67"onclick="clickEventHandler(67)"onmouseover="showName(67)"></td>
+	<td><img width = "64" height="64" id="Empty"name="68"onclick="clickEventHandler(68)"onmouseover="showName(68)"></td>
+  </tr>
+  <tr>
+	<td><img width = "64" height="64" id="WhitePawn"name="71"onclick="clickEventHandler(71)"onmouseover="showName(71)"></td>
+	<td><img width = "64" height="64" id="WhitePawn"name="72"onclick="clickEventHandler(72)"onmouseover="showName(72)"></td>
+	<td><img width = "64" height="64" id="WhitePawn"name="73"onclick="clickEventHandler(73)"onmouseover="showName(73)"></td>
+    <td><img width = "64" height="64" id="WhitePawn"name="74"onclick="clickEventHandler(74)"onmouseover="showName(74)"></td>
+	<td><img width = "64" height="64" id="WhitePawn"name="75"onclick="clickEventHandler(75)"onmouseover="showName(75)"></td>
+	<td><img width = "64" height="64" id="WhitePawn"name="76"onclick="clickEventHandler(76)"onmouseover="showName(76)"></td>
+	<td><img width = "64" height="64" id="WhitePawn"name="77"onclick="clickEventHandler(77)"onmouseover="showName(77)"></td>
+    <td><img width = "64" height="64" id="WhitePawn"name="78"onclick="clickEventHandler(78)"onmouseover="showName(78)"></td>
+  </tr>
+  <tr>
+	<td><img width = "64" height="64" id="WhiteRook"name="81"onclick="clickEventHandler(81)"onmouseover="showName(81)"></td>
+	<td><img width = "64" height="64" id="WhiteKnight"name="82"onclick="clickEventHandler(82)"onmouseover="showName(82)"></td>
+	<td><img width = "64" height="64" id="WhiteBishop"name="83"onclick="clickEventHandler(83)"onmouseover="showName(83)"></td>
+	<td><img width = "64" height="64" id="WhiteQueen"name="84"onclick="clickEventHandler(84)"onmouseover="showName(84)"></td>
+	<td><img width = "64" height="64" id="WhiteKing"name="85"onclick="clickEventHandler(85)"onmouseover="showName(85)"></td>
+    <td><img width = "64" height="64" id="WhiteBishop"name="86"onclick="clickEventHandler(86)"onmouseover="showName(86)"></td>
+	<td><img width = "64" height="64" id="WhiteKnight"name="87"onclick="clickEventHandler(87)"onmouseover="showName(87)"></td>
+	<td><img width = "64" height="64" id="WhiteRook"name="88"onclick="clickEventHandler(88)" onmouseover="showName(88)"></td>
+  </tr>
+  </table>
+  Turn
+  <input type="text" id="turn" readonly>
+  <input type="button"  value="White" onclick="whiteTurn()">
+  <input type="button"  value="Black" onclick="blackTurn()">
+  <br>
+  Square
+  <input type="text" id="square" readonly>
+  <br>
+  <input type="button" id="download" value="Download" onclick="download()">
+  <input type="file" id="file" value="File"onclick="download()">
+  <br>
+  <input type="button" value="Queenside Castle" onclick="queenSideCastle()">
+  <input type="button" value="Kingside Castle" onclick="kingSideCastle()">
+  <div id="chat">
+  <div id = "error-container"></div>
+      <input id = "name" type = "text" name = "name" value = "" 
+         placeholder = "Enter your name!">
+      <button type = "button" name = "button" onclick = "setUsername()">
+         Let me chat!
+      </button>
+  </div>
+  <script src = "/socket.io/socket.io.js"></script>
+ <script>
+
+	// global variables	
+	var socket = io();
+	var boardIds= new Array();
+	var row,col,i;
+	var canvas,context;
+	var newSquare;
+	var playerTurn ="white";
+	var currentCanvas,newCanvas;
+	var move;
+	var whiteWin=true,blackWin=true;
+	var left;
+	var randomNum;
+	var image;
+	var whiteKingMoved=false,blackKingMoved=false;
+	var whiteRookMoved=false,blackRookMoved=false;
+	
+	const inputBox = document.getElementById("square");
+	const turnBox = document.getElementById("turn");
+	const div = document.getElementById("chat");
+	
+	const whiteSquares = [12,14,16,18,21,23,25,27,32,34,36,38,41,43,45,47,52,54,56,58,61,63,65,67,72,74,76,78,81,83,85,87];
+	const blackSquares=[11,13,15,17,22,24,26,28,31,33,35,37,42,44,46,48,51,53,55,57,62,64,66,68,71,73,75,77,82,84,86,88];
+	turnBox.value=playerTurn;
+	updateBoard();
+	
+	var input = document.getElementById("file");
+	
+	input.addEventListener("change", function () {
+	if (this.files && this.files[0]) {
+		var myFile = this.files[0];
+		var reader = new FileReader();
+		var row,col,index=0;
+		reader.addEventListener('load', function (event) {
+			var table_contents = event.target.result.split(",");
+			for (row=1;row<=8;row++){
+				for (col=1;col<=8;col++){
+					document.getElementsByName(row.toString().concat(col.toString()))[0].id=table_contents[index];
+					index++;
+				}
+			}
+			updateBoards();
+    });
+    
+    reader.readAsText(myFile);
+  }   
+});
+	
+	// download text file 
+	var filename,text,name;
+	document.getElementById("download").addEventListener("click", function(){
+		
+		text = generate_text();
+		name = prompt("What do you want to name the file?");
+		filename = name.concat(".txt");
+    
+    download(filename, text);
+	}, false);
+	
+	function download(filename, text) {
+		var element = document.createElement('a');
+		element.setAttribute('href', 'data:txt/plain;charset=utf-8,' + encodeURIComponent(text));
+		element.setAttribute('download', filename);
+
+		element.style.display = 'none';
+		document.body.appendChild(element);
+
+		element.click();
+
+		document.body.removeChild(element);
+	}
+	
+	function generate_text(){
+		var row,col;
+		var text="";
+		
+		for (row=1;row<=8;row++){
+			for (col=1;col<=8;col++){
+				text+=document.getElementsByName(row.toString().concat(col.toString()))[0].id+",";
+			}
+			text+="\n";
+		}
+		return text;
+	}
+	
+	function whiteTurn(){
+		playerTurn="white";
+		turnBox.value="white";
+		updateBoards();
+	}
+	
+	function blackTurn(){
+		playerTurn="black";
+		turnBox.value="black";
+		updateBoards();
+	}
+	
+	function showName(square){
+		
+		inputBox.value=square.toString();
+		
+	}
+	
+	// broadcast a change in the game to the server 
+	function updateBoards(){
+		
+		boardIds=[];
+		
+		// prepare an array of the piece locations to broadcasted 
+		for(row=1;row<=8;row++){
+			for(col=1;col<=8;col++){
+				
+				canvas= document.getElementsByName(row.toString().concat(col.toString()))[0];
+				boardIds.push(canvas.id);
+				
+			}
+		}
+		
+		
+		
+		
+		// send boardIds array to server
+		socket.emit("broadcast",{gameState:boardIds,turn:playerTurn});
+		updateBoard();
+	}
+
+	
+	// recieve broadcast data and update the board 
+	socket.on("update",function(data) {
+		
+		
+		i=0;
+		for(row=1;row<=8;row++){
+			for(col=1;col<=8;col++){
+				
+				document.getElementsByName(row.toString().concat(col.toString()))[0].id=data.gameState[i];
+				i++;
+			}
+		}
+		
+         updateBoard();
+		 win();
+		 
+		 // next player's turn
+		 playerTurn=data.turn;
+		 turnBox.value=playerTurn;
+		 
+      });
+	
+	function queenSideCastle(){
+		
+		if(playerTurn == "white"){
+		
+			// is is possible to castle on king side
+			if(document.getElementsByName("81")[0].id == "WhiteRook" && document.getElementsByName("82")[0].id == "Empty" && document.getElementsByName("83")[0].id == "Empty" && document.getElementsByName("84")[0].id == "Empty" && document.getElementsByName("85")[0].id == "WhiteKing" && !whiteKingMoved && !whiteRookMoved){
+					
+				canvas=document.getElementsByName("81")[0];
+				canvas.id="Empty";
+					
+				canvas=document.getElementsByName("82")[0];
+				canvas.id="Empty";
+					
+				canvas=document.getElementsByName("83")[0];
+				canvas.id="WhiteKing";
+					
+				canvas=document.getElementsByName("84")[0];
+				canvas.id="WhiteRook";
+				
+				canvas=document.getElementsByName("85")[0];
+				canvas.id="Empty";
+				
+				playerTurn="black";
+				turnBox.value=playerTurn;
+			}
+
+			else{
+				alert("Unable to castle on queen side");
+				return 0;
+			}
+		}
+		
+		else if(playerTurn == "black"){
+		
+			// is is possible to castle on king side
+			if(document.getElementsByName("11")[0].id == "BlackRook" && document.getElementsByName("12")[0].id == "Empty" && document.getElementsByName("13")[0].id == "Empty" && document.getElementsByName("14")[0].id == "Empty" && document.getElementsByName("15")[0].id == "BlackKing" && !blackKingMoved && !blackRookMoved){
+					
+				canvas=document.getElementsByName("11")[0];
+				canvas.id="Empty";
+					
+				canvas=document.getElementsByName("12")[0];
+				canvas.id="Empty";
+					
+				canvas=document.getElementsByName("13")[0];
+				canvas.id="BlackKing";
+					
+				canvas=document.getElementsByName("14")[0];
+				canvas.id="BlackRook";
+				
+				canvas=document.getElementsByName("15")[0];
+				canvas.id="Empty";
+				
+				playerTurn="white";
+				turnBox.value=playerTurn;
+			}
+
+			else{
+				alert("Unable to castle on queen side");
+				return 0;
+			}
+		}
+		
+		updateBoards();
+	
+	}
+	
+	function kingSideCastle(){
+		
+	
+		if(playerTurn == "white"){
+		
+			// is is possible to castle on king side
+			if(document.getElementsByName("85")[0].id == "WhiteKing" && document.getElementsByName("86")[0].id == "Empty" && document.getElementsByName("87")[0].id == "Empty" && document.getElementsByName("88")[0].id == "WhiteRook" && !whiteKingMoved && !whiteRookMoved){
+					
+				canvas=document.getElementsByName("85")[0];
+				canvas.id="Empty";
+					
+				canvas=document.getElementsByName("86")[0];
+				canvas.id="WhiteRook";
+					
+				canvas=document.getElementsByName("87")[0];
+				canvas.id="WhiteKing";
+					
+				canvas=document.getElementsByName("88")[0];
+				canvas.id="Empty";
+					
+				playerTurn="black";
+				turnBox.value=playerTurn;
+			}
+
+			else{
+				alert("Unable to castle on king side");
+				return 0;
+			}
+		}
+		
+		else if(playerTurn == "black"){
+		
+			// is is possible to castle on king side
+			if(document.getElementsByName("15")[0].id == "BlackKing" && document.getElementsByName("16")[0].id == "Empty" && document.getElementsByName("17")[0].id == "Empty" && document.getElementsByName("18")[0].id == "BlackRook" && !blackKingMoved && !blackRookMoved){
+					
+				canvas=document.getElementsByName("15")[0];
+				canvas.id="Empty";
+					
+				canvas=document.getElementsByName("16")[0];
+				canvas.id="BlackRook";
+					
+				canvas=document.getElementsByName("17")[0];
+				canvas.id="BlackKing";
+					
+				canvas=document.getElementsByName("18")[0];
+				canvas.id="Empty";
+					
+				playerTurn="white";
+				turnBox.value=playerTurn;
+			}
+
+			else{
+				alert("Unable to castle on king side");
+				return 0;
+			}
+		}
+		
+		updateBoards();
+	
+	}
+	
+	
+	function clickEventHandler(square){
+		
+		// players take turns 
+		
+		// white players's turn
+		if(playerTurn == "white"){
+			whiteMove(square);
+		}
+		
+		// black player's turn
+		else if(playerTurn == "black"){
+			blackMove(square);
+		}
+		
+		turnBox.value=playerTurn;
+		updateBoards();
+
+	}
+	
+	function whiteMove(square){
+		
+		currentCanvas = document.getElementsByName(square.toString())[0];
+		
+		if(currentCanvas.id.slice(0,5) !="White"){
+			alert("You must select a white piece");
+			return 0;
+		}
+		
+		newSquare = prompt("Which square do you want to go to?");
+		
+		// input is valid 
+		if(Number(newSquare[0]) >0 && Number(newSquare[0])<9 &&  Number(newSquare[1]) >0 && Number(newSquare[1])<9){
+			
+			newSquare = parseInt(newSquare);
+			newCanvas = document.getElementsByName(newSquare.toString())[0];
+			
+			// player chooses to move pawn 
+			if(currentCanvas.id == "WhitePawn"){
+			
+				move=confirm("Do you want to move the pawn?");
+				
+				// move pawn forward
+				if(move){
+			
+					// pawn can move forward 1 square
+					if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0]) + 1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1]) && newCanvas.id == "Empty"){
+						
+						
+						// passed pawn 
+						if(newCanvas.getAttribute("name")[0] == "1"){
+							
+							// pawn can become either a knight, bishop, rook, or queen
+							randomNum = Math.floor(Math.random() * 4) + 1;
+							
+							if(randomNum == 1){
+								newCanvas.id="WhiteQueen";
+							}
+							else if(randomNum == 2){
+								newCanvas.id="WhiteKnight";
+							}
+							else if(randomNum == 3){
+								newCanvas.id="WhiteBishop";
+							}
+							else if(randomNum == 4){
+								newCanvas.id="WhiteRook";
+							}
+							
+							currentCanvas.id="Empty";
+							playerTurn="black";
+						}
+						
+						else if(newCanvas.getAttribute("name")[0] != "1"){
+							newCanvas.id="WhitePawn";
+							currentCanvas.id="Empty";
+							playerTurn="black";
+						}
+					}
+					
+					// special case where pawn first moves forward 2 squares 
+					else if(currentCanvas.getAttribute("name")[0] =="7" && newCanvas.getAttribute("name")[0]=="5"&&newCanvas.id=="Empty" && document.getElementsByName("6".concat(currentCanvas.getAttribute("name")[1]))[0].id=="Empty" && currentCanvas.getAttribute("name")[1] == newCanvas.getAttribute("name")[1]){
+						
+						newCanvas.id="WhitePawn";
+						currentCanvas.id="Empty";
+						playerTurn="black";
+					
+					}
+					
+					// invalid move
+					else{
+						alert("Pawn cannot move to that square");
+						return 0;
+					}
+					
+				}
+				
+				// attack with pawn 
+				else if(!move){
+					
+					// pawn can attack 
+					if(parseInt(currentCanvas.getAttribute("name")[0]) == parseInt(newCanvas.getAttribute("name")[0]) + 1 && (parseInt(currentCanvas.getAttribute("name")[1]) == parseInt(newCanvas.getAttribute("name")[1]) + 1 || parseInt(currentCanvas.getAttribute("name")[1]) == parseInt(newCanvas.getAttribute("name")[1]) - 1) && newCanvas.id.slice(0,5) =="Black"){
+						
+						// passed pawn 
+						if(newCanvas.getAttribute("name")[0] == "1"){
+						
+							// pawn can become either a knight, bishop, rook, or queen
+							randomNum = Math.floor(Math.random() * 4) + 1;
+							
+							if(randomNum == 1){
+								newCanvas.id="WhiteQueen";
+							}
+							else if(randomNum == 2){
+								newCanvas.id="WhiteKnight";
+							}
+							else if(randomNum == 3){
+								newCanvas.id="WhiteBishop";
+							}
+							else if(randomNum == 4){
+								newCanvas.id="WhiteRook";
+							}
+							
+							currentCanvas.id="Empty";
+							playerTurn="black";
+						}
+						
+						else if(newCanvas.getAttribute("name")[0] != "1"){
+							newCanvas.id="WhitePawn";
+							currentCanvas.id="Empty";
+							playerTurn="black";
+						}
+						
+					}
+					
+					// invalid move
+					else{
+						alert("Pawn cannot attack at that square");
+						return 0;
+					}
+				}
+			}
+			
+			else if(currentCanvas.id == "WhiteKnight"){
+				
+				// left diagonal
+				if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+2&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+1 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKnight";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+				}
+				// top
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+2&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-1 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKnight";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+				}
+				// right diagonal
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+1&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+2 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKnight";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+				}
+				// right
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+1&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-2 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKnight";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+				}
+				// left
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-1&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+2&& newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKnight";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+				}
+				// left diagonal 
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-1&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-2 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKnight";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+				}
+				// down
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-2&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+1&& newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKnight";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+				}
+				// right diagonal
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-2&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-1 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKnight";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+				}
+				
+				// invalid move
+				else{
+					alert("Knight cannot move to that square");
+					return 0;
+				}
+			}
+			
+			else if(currentCanvas.id == "WhiteKing"){
+				
+				// left diagonal
+				if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+1 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKing";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+					whiteKingMoved=true;
+				}
+				// top
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1]) && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKing";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+					whiteKingMoved=true;
+				}
+				// right diagonal
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-1 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKing";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+					whiteKingMoved=true;
+				}
+				// right
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+1 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKing";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+					whiteKingMoved=true;
+				}
+				// left
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-1 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKing";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+					whiteKingMoved=true;
+				}
+				// left diagonal 
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+1 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKing";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+					whiteKingMoved=true;
+				}
+				// down
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1]) && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKing";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+					whiteKingMoved=true;
+				}
+				// right diagonal
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-1 && newCanvas.id.slice(0,5) !="White"){
+					newCanvas.id="WhiteKing";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+					whiteKingMoved=true;
+				}
+				// invalid move
+				else{
+					alert("King cannot move to that square");
+					return 0;
+				}
+			}
+			
+			else if(currentCanvas.id == "WhiteRook"){
+				
+				// move vertically 
+				if(Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1]) && newCanvas.id.slice(0,5) !="White"){
+					
+					// move up
+					if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0])){
+						
+						for(row=parseInt(newCanvas.getAttribute("name")[0])+1;row<=parseInt(currentCanvas.getAttribute("name")[0])-1;row++){
+							
+							if(document.getElementsByName(row.toString().concat(currentCanvas.getAttribute("name")[1]))[0].id !="Empty"){
+								alert("Rook cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+				
+					// move down
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0])){
+						
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1;row<=parseInt(newCanvas.getAttribute("name")[0])-1;row++){
+							
+							if(document.getElementsByName(row.toString().concat(currentCanvas.getAttribute("name")[1]))[0].id !="Empty"){
+								alert("Rook cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+					newCanvas.id="WhiteRook";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+					whiteRookMoved=true;
+				}
+					
+				
+					
+				
+				
+				// move horizontally
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0]) && newCanvas.id.slice(0,5) !="White"){
+					
+					// move left
+					if(Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+						for(col=parseInt(newCanvas.getAttribute("name")[1])+1;col<=parseInt(currentCanvas.getAttribute("name")[1])-1;col++){
+							
+							if(document.getElementsByName(currentCanvas.getAttribute("name")[0].concat(col.toString()))[0].id !="Empty"){
+								alert("Rook cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+				
+					// move right
+					else if(Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+						for(col=parseInt(currentCanvas.getAttribute("name")[1])+1;col<=parseInt(newCanvas.getAttribute("name")[1])-1;col++){
+							
+							if(document.getElementsByName(currentCanvas.getAttribute("name")[0].concat(col.toString()))[0].id !="Empty"){
+								alert("Rook cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+					newCanvas.id="WhiteRook";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+					whiteRookMoved=true;
+				}
+				// invalid move 
+				else{
+					alert("Rook cannot move to that square");
+					return 0;
+				}
+			}
+			
+			else if(currentCanvas.id == "WhiteBishop"){
+				
+				// move diagonally
+				if(Math.abs(Number(currentCanvas.getAttribute("name")[1]) - Number(newCanvas.getAttribute("name")[1])) == Math.abs(Number(currentCanvas.getAttribute("name")[0]) - Number(newCanvas.getAttribute("name")[0])) && newCanvas.id.slice(0,5) !="White"){
+					
+					// left diagonal
+					if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(newCanvas.getAttribute("name")[0])+1,col=parseInt(newCanvas.getAttribute("name")[1])+1;row<=parseInt(currentCanvas.getAttribute("name")[0])-1 && col<=parseInt(currentCanvas.getAttribute("name")[1])-1;row++,col++){
+						
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Bishop cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// left up
+					else if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+				
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])-1,col=parseInt(currentCanvas.getAttribute("name")[1])+1;row>=parseInt(newCanvas.getAttribute("name")[0])+1 && col<=parseInt(newCanvas.getAttribute("name")[1])-1;row--,col++){
+					
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Bishop cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// right down
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1,col=parseInt(currentCanvas.getAttribute("name")[1])-1;row<=parseInt(newCanvas.getAttribute("name")[0])-1 && col>=parseInt(newCanvas.getAttribute("name")[1])+1;row++,col--){
+						
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Bishop cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// right diagonal
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1,col=parseInt(currentCanvas.getAttribute("name")[1])+1;row<=parseInt(newCanvas.getAttribute("name")[0])-1 && col<=parseInt(newCanvas.getAttribute("name")[1])-1;row++,col++){
+							
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Bishop cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					newCanvas.id="WhiteBishop";
+					currentCanvas.id="Empty";	
+					playerTurn="black";
+				}
+				// invalid move 
+				else{
+					alert("Bishop cannot move to that square");
+					return 0;
+				}
+			
+			}
+			
+			else if(currentCanvas.id == "WhiteQueen"){
+				
+				// move vertically 
+				if(Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1]) && newCanvas.id.slice(0,5) !="White"){
+					
+					// move up
+					if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0])){
+						
+						for(row=parseInt(newCanvas.getAttribute("name")[0])+1;row<=parseInt(currentCanvas.getAttribute("name")[0])-1;row++){
+							
+							if(document.getElementsByName(row.toString().concat(currentCanvas.getAttribute("name")[1]))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+				
+					// move down
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0])){
+						
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1;row<=parseInt(newCanvas.getAttribute("name")[0])-1;row++){
+							
+							if(document.getElementsByName(row.toString().concat(currentCanvas.getAttribute("name")[1]))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+					newCanvas.id="WhiteQueen";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+				}
+					
+				
+					
+				
+				
+				// move horizontally
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0]) && newCanvas.id.slice(0,5) !="White"){
+					
+					// move left
+					if(Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+						for(col=parseInt(newCanvas.getAttribute("name")[1])+1;col<=parseInt(currentCanvas.getAttribute("name")[1])-1;col++){
+							
+							if(document.getElementsByName(currentCanvas.getAttribute("name")[0].concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+				
+					// move right
+					else if(Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+						for(col=parseInt(currentCanvas.getAttribute("name")[1])+1;col<=parseInt(newCanvas.getAttribute("name")[1])-1;col++){
+							
+							if(document.getElementsByName(currentCanvas.getAttribute("name")[0].concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+					newCanvas.id="WhiteQueen";
+					currentCanvas.id="Empty";
+					playerTurn="black";
+				}
+				
+				// move diagonally
+				else if(Math.abs(Number(currentCanvas.getAttribute("name")[1]) - Number(newCanvas.getAttribute("name")[1])) == Math.abs(Number(currentCanvas.getAttribute("name")[0]) - Number(newCanvas.getAttribute("name")[0])) && newCanvas.id.slice(0,5) !="White"){
+					
+					// left diagonal
+					if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(newCanvas.getAttribute("name")[0])+1,col=parseInt(newCanvas.getAttribute("name")[1])+1;row<=parseInt(currentCanvas.getAttribute("name")[0])-1 && col<=parseInt(currentCanvas.getAttribute("name")[1])-1;row++,col++){
+						
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// left up
+					else if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+				
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])-1,col=parseInt(currentCanvas.getAttribute("name")[1])+1;row>=parseInt(newCanvas.getAttribute("name")[0])+1 && col<=parseInt(newCanvas.getAttribute("name")[1])-1;row--,col++){
+					
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// right down
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1,col=parseInt(currentCanvas.getAttribute("name")[1])-1;row<=parseInt(newCanvas.getAttribute("name")[0])-1 && col>=parseInt(newCanvas.getAttribute("name")[1])+1;row++,col--){
+						
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// right diagonal
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1,col=parseInt(currentCanvas.getAttribute("name")[1])+1;row<=parseInt(newCanvas.getAttribute("name")[0])-1 && col<=parseInt(newCanvas.getAttribute("name")[1])-1;row++,col++){
+							
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					newCanvas.id="WhiteQueen";
+					currentCanvas.id="Empty";	
+					playerTurn="black";
+				}
+				
+				// invalid move
+				else{
+					alert("Queen cannot move to that square");
+					return 0;
+				}
+			}
+		}
+	}
+	
+	function blackMove(square){
+		
+		currentCanvas = document.getElementsByName(square.toString())[0];
+		
+		if(currentCanvas.id.slice(0,5) !="Black"){
+			alert("You must select a black piece");
+			return 0;
+		}
+		
+		newSquare = prompt("Which square do you want to go to?");
+		
+		// input is valid 
+		if(Number(newSquare[0]) >0 && Number(newSquare[0])<9 &&  Number(newSquare[1]) >0 && Number(newSquare[1])<9){
+			
+			newSquare =parseInt(newSquare);
+			newCanvas = document.getElementsByName(newSquare.toString())[0];
+			
+			// player chooses to move pawn 
+			if(currentCanvas.id == "BlackPawn"){
+			
+				move=confirm("Do you want to move the pawn?");
+				
+				// move pawn forward
+				if(move){
+			
+					// pawn can move forward 1 square
+					if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0]) - 1 && newCanvas.id == "Empty"){
+						
+						// passed pawn 
+						if(newCanvas.getAttribute("name")[0] == "8"){
+							newCanvas.id="BlackQueen";
+							currentCanvas.id="Empty";
+							playerTurn="white";
+						}
+						
+						else if(newCanvas.getAttribute("name")[0] != "8"){
+							newCanvas.id="BlackPawn";
+							currentCanvas.id="Empty";
+							playerTurn="white";
+						}
+						
+					}
+					
+					// special case where pawn first moves forward 2 squares 
+					else if(currentCanvas.getAttribute("name")[0] =="2" && newCanvas.getAttribute("name")[0]=="4"&&newCanvas.id=="Empty" && document.getElementsByName("3".concat(currentCanvas.getAttribute("name")[1]))[0].id=="Empty" && currentCanvas.getAttribute("name")[1] == newCanvas.getAttribute("name")[1]){
+						
+						newCanvas.id="BlackPawn";
+						currentCanvas.id="Empty";
+						playerTurn="white";
+					
+					}
+					
+					else{
+						alert("Pawn cannot move to that square");
+						return 0;
+					}
+				}
+				
+				// attack with pawn 
+				else if(!move){
+					
+					// pawn can attack 
+					if(parseInt(currentCanvas.getAttribute("name")[0]) == parseInt(newCanvas.getAttribute("name")[0]) - 1 && (parseInt(currentCanvas.getAttribute("name")[1]) == parseInt(newCanvas.getAttribute("name")[1]) + 1 || parseInt(currentCanvas.getAttribute("name")[1]) == parseInt(newCanvas.getAttribute("name")[1]) - 1) && newCanvas.id.slice(0,5) =="White"){
+						
+						// passed pawn 
+						if(newCanvas.getAttribute("name")[0] == "8"){
+							newCanvas.id="BlackQueen";
+							currentCanvas.id="Empty";
+							playerTurn="white";
+						}
+						
+						else if(newCanvas.getAttribute("name")[0] != "8"){
+							newCanvas.id="BlackPawn";
+							currentCanvas.id="Empty";
+							playerTurn="white";
+						}
+					}
+					
+					// invalid move
+					else{
+						alert("Pawn cannot attack at that square");
+						return 0;
+					}
+				}
+			}
+			
+			else if(currentCanvas.id == "BlackKnight"){
+				
+				// left diagonal
+				if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+2&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+1 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKnight";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+				}
+				// top
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+2&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-1 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKnight";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+				}
+				// right diagonal
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+1&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+2 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKnight";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+				}
+				// right
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+1&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-2 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKnight";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+				}
+				// left
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-1&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+2&& newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKnight";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+				}
+				// left diagonal 
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-1&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-2 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKnight";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+				}
+				// down
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-2&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+1&& newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKnight";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+				}
+				// right diagonal
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-2&&Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-1 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKnight";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+				}
+				
+				// invalid move
+				else{
+					alert("Knight cannot move to that square");
+					return 0;
+				}
+			}
+			
+			else if(currentCanvas.id == "BlackKing"){
+				
+				// left diagonal
+				if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+1 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKing";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+					blackKingMoved=true;
+				}
+				// top
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1]) && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKing";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+					blackKingMoved=true;
+				}
+				// right diagonal
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])+1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-1 && newCanvas.id.slice(0,5) !="Black,"){
+					newCanvas.id="BlackKing";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+					blackKingMoved=true;
+				}
+				// right
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+1 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKing";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+					blackKingMoved=true;
+				}
+				// left
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-1 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKing";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+					blackKingMoved=true;
+				}
+				// left diagonal 
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])+1 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKing";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+					blackKingMoved=true;
+				}
+				// down
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1]) && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKing";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+					blackKingMoved=true;
+				}
+				// right diagonal
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0])-1 && Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1])-1 && newCanvas.id.slice(0,5) !="Black"){
+					newCanvas.id="BlackKing";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+					blackKingMoved=true;
+				}
+				// invalid move
+				else{
+					alert("King cannot move to that square");
+					return 0;
+				}
+			}
+			
+			else if(currentCanvas.id == "BlackRook"){
+				
+				// move vertically 
+				if(Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1]) && newCanvas.id.slice(0,5) !="Black"){
+					
+					// move up
+					if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0])){
+						
+						for(row=parseInt(newCanvas.getAttribute("name")[0])+1;row<=parseInt(currentCanvas.getAttribute("name")[0])-1;row++){
+							
+							if(document.getElementsByName(row.toString().concat(currentCanvas.getAttribute("name")[1]))[0].id !="Empty"){
+								alert("Rook cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+				
+					// move down
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0])){
+						
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1;row<=parseInt(newCanvas.getAttribute("name")[0])-1;row++){
+							
+							if(document.getElementsByName(row.toString().concat(currentCanvas.getAttribute("name")[1]))[0].id !="Empty"){
+								alert("Rook cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+					newCanvas.id="BlackRook";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+					blackRookMoved=true;
+				}
+					
+				
+					
+				
+				
+				// move horizontally
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0]) && newCanvas.id.slice(0,5) !="Black"){
+					
+					// move left
+					if(Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+						for(col=parseInt(newCanvas.getAttribute("name")[1])+1;col<=parseInt(currentCanvas.getAttribute("name")[1])-1;col++){
+							
+							if(document.getElementsByName(currentCanvas.getAttribute("name")[0].concat(col.toString()))[0].id !="Empty"){
+								alert("Rook cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+				
+					// move right
+					else if(Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+						for(col=parseInt(currentCanvas.getAttribute("name")[1])+1;col<=parseInt(newCanvas.getAttribute("name")[1])-1;col++){
+							
+							if(document.getElementsByName(currentCanvas.getAttribute("name")[0].concat(col.toString()))[0].id !="Empty"){
+								alert("Rook cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+					newCanvas.id="BlackRook";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+					blackRookMoved=true;
+				}
+				
+				// invalid move
+				else{
+					alert("Rook cannot move to that square");
+					return 0;
+				}
+			}
+			
+			else if(currentCanvas.id == "BlackBishop"){
+				
+				// move diagonally
+				if(Math.abs(Number(currentCanvas.getAttribute("name")[1]) - Number(newCanvas.getAttribute("name")[1])) == Math.abs(Number(currentCanvas.getAttribute("name")[0]) - Number(newCanvas.getAttribute("name")[0])) && newCanvas.id.slice(0,5) !="Black"){
+					
+					// left diagonal
+					if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(newCanvas.getAttribute("name")[0])+1,col=parseInt(newCanvas.getAttribute("name")[1])+1;row<=parseInt(currentCanvas.getAttribute("name")[0])-1 && col<=parseInt(currentCanvas.getAttribute("name")[1])-1;row++,col++){
+						
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Bishop cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// left up
+					else if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+				
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])-1,col=parseInt(currentCanvas.getAttribute("name")[1])+1;row>=parseInt(newCanvas.getAttribute("name")[0])+1 && col<=parseInt(newCanvas.getAttribute("name")[1])-1;row--,col++){
+					
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Bishop cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// right down
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1,col=parseInt(currentCanvas.getAttribute("name")[1])-1;row<=parseInt(newCanvas.getAttribute("name")[0])-1 && col>=parseInt(newCanvas.getAttribute("name")[1])+1;row++,col--){
+						
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Bishop cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// right diagonal
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1,col=parseInt(currentCanvas.getAttribute("name")[1])+1;row<=parseInt(newCanvas.getAttribute("name")[0])-1 && col<=parseInt(newCanvas.getAttribute("name")[1])-1;row++,col++){
+							
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Bishop cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					newCanvas.id="BlackBishop";
+					currentCanvas.id="Empty";	
+					playerTurn="white";
+				}
+				
+				// invalid move
+				else{
+					alert("Bishop cannot move to that square");
+					return 0;
+				}
+			
+			}
+			
+			else if(currentCanvas.id == "BlackQueen"){
+				
+				// move vertically 
+				if(Number(currentCanvas.getAttribute("name")[1]) == Number(newCanvas.getAttribute("name")[1]) && newCanvas.id.slice(0,5) !="Black"){
+					
+					// move up
+					if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0])){
+						
+						for(row=parseInt(newCanvas.getAttribute("name")[0])+1;row<=parseInt(currentCanvas.getAttribute("name")[0])-1;row++){
+							
+							if(document.getElementsByName(row.toString().concat(currentCanvas.getAttribute("name")[1]))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+				
+					// move down
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0])){
+						
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1;row<=parseInt(newCanvas.getAttribute("name")[0])-1;row++){
+							
+							if(document.getElementsByName(row.toString().concat(currentCanvas.getAttribute("name")[1]))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+					newCanvas.id="BlackQueen";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+				}
+					
+				// move horizontally
+				else if(Number(currentCanvas.getAttribute("name")[0]) == Number(newCanvas.getAttribute("name")[0]) && newCanvas.id.slice(0,5) !="Black"){
+					
+					// move left
+					if(Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+						for(col=parseInt(newCanvas.getAttribute("name")[1])+1;col<=parseInt(currentCanvas.getAttribute("name")[1])-1;col++){
+							
+							if(document.getElementsByName(currentCanvas.getAttribute("name")[0].concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+				
+					// move right
+					else if(Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+						for(col=parseInt(currentCanvas.getAttribute("name")[1])+1;col<=parseInt(newCanvas.getAttribute("name")[1])-1;col++){
+							
+							if(document.getElementsByName(currentCanvas.getAttribute("name")[0].concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						
+						}
+							
+					}
+					newCanvas.id="BlackQueen";
+					currentCanvas.id="Empty";
+					playerTurn="white";
+				}
+				
+				// move diagonally
+				else if(Math.abs(Number(currentCanvas.getAttribute("name")[1]) - Number(newCanvas.getAttribute("name")[1])) == Math.abs(Number(currentCanvas.getAttribute("name")[0]) - Number(newCanvas.getAttribute("name")[0])) && newCanvas.id.slice(0,5) !="Black"){
+					
+					// left diagonal
+					if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(newCanvas.getAttribute("name")[0])+1,col=parseInt(newCanvas.getAttribute("name")[1])+1;row<=parseInt(currentCanvas.getAttribute("name")[0])-1 && col<=parseInt(currentCanvas.getAttribute("name")[1])-1;row++,col++){
+						
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// left up
+					else if(Number(currentCanvas.getAttribute("name")[0]) > Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+				
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])-1,col=parseInt(currentCanvas.getAttribute("name")[1])+1;row>=parseInt(newCanvas.getAttribute("name")[0])+1 && col<=parseInt(newCanvas.getAttribute("name")[1])-1;row--,col++){
+					
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// right down
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) > Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1,col=parseInt(currentCanvas.getAttribute("name")[1])-1;row<=parseInt(newCanvas.getAttribute("name")[0])-1 && col>=parseInt(newCanvas.getAttribute("name")[1])+1;row++,col--){
+						
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					// right diagonal
+					else if(Number(currentCanvas.getAttribute("name")[0]) < Number(newCanvas.getAttribute("name")[0]) && Number(currentCanvas.getAttribute("name")[1]) < Number(newCanvas.getAttribute("name")[1])){
+						
+					
+						for(row=parseInt(currentCanvas.getAttribute("name")[0])+1,col=parseInt(currentCanvas.getAttribute("name")[1])+1;row<=parseInt(newCanvas.getAttribute("name")[0])-1 && col<=parseInt(newCanvas.getAttribute("name")[1])-1;row++,col++){
+							
+							if(document.getElementsByName(row.toString().concat(col.toString()))[0].id !="Empty"){
+								alert("Queen cannot move to that square because it has been blocked");
+								return 0;
+							}
+							
+						}
+							
+					}
+					
+					newCanvas.id="BlackQueen";
+					currentCanvas.id="Empty";	
+					playerTurn="white";
+				}
+				
+				// invalid move
+				else{
+					alert("Queen cannot move to that square");
+					return 0;
+				}
+			}
+		}
+	}
+	
+	function is_in(element,array){
+			
+		for (i=0;i<=array.length-1;i++){
+			if (array[i]==element){
+				return true 
+			}
+		
+		}
+		return false 
+	
+	}
+			
+	function updateBoard(){
+		
+		
+		// redraw all images  
+		for(row=1;row<=8;row++){
+			for(col=1;col<=8;col++){
+			
+				canvas = document.getElementsByName(row.toString().concat(col.toString()))[0];
+			
+				if(canvas.id == "BlackRook"){
+			
+					canvas.src="https://w7.pngwing.com/pngs/1002/426/png-transparent-chess-piece-rook-king-pawn-angle-furniture-king.png";
+		
+				}
+				else if(canvas.id =="BlackKnight"){
+					canvas.src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZG4OsC6zbMyN0jDEhhSQFhe0On87XHyJ3FGgu10zm9V6p20yD&usqp=CAU";
+				}
+				else if(canvas.id == "BlackBishop"){
+					canvas.src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADlCAMAAAAP8WnWAAAAh1BMVEX///8AAACbm5vY2NjCwsJjY2P09PTf39/7+/vc3Nzx8fH4+PiCgoLt7e1HR0ejo6O8vLzl5eVXV1eVlZXNzc2Li4uzs7PR0dF/f39zc3M0NDR5eXnHx8erq6sfHx9BQUFsbGxPT08MDAwpKSkrKys+Pj4XFxciIiIzMzNeXl6YmJhGRkYTExMWrsJZAAAKIElEQVR4nO2da3uyOBCGi6CogIAcPFvwVLXv//99W6RUgQSSkGSC197ftrtL5yk5TCYzw8eHLEaefb5ol0/bsKT9TkmMbO1J9F7yPK2MAW0QRyKtygDaJG4ENW2a5kIbxYnqmHynkTlFatO0t1hVEow4G9owDvgYbZo2hTatOwOsuB20ad3Bjcq3GJc3rLgbtGndmWPFzaFN606KFZdCm9adt35z+Dk3hDatOyusuAjatO64WHExtGndcbDiRtCmcWCJ0RZAG8YD6wup7QhtFx8mSHE+tFmcQJ1Wt9BGcWNb07aANokj5rkk7fNdxuQvu6e0/RtscBWs7eb0o+xqh2NoU8TgvUnMC4Xx8+ZCaCMEkU87D9oMIdx/15N3iTW/svlbLd/gqFNm+v2yzaVvEWz+Qz+UNvG9CW0QR3ZalffZx1GRhjeIyGb4V4Q2TTs70IZxIEZKe48db4PVpmlLaOO6YaJDDAXrPh996qvk2wzN0bBVm6Yl/TwAhYd2aT/s+xhxqOee4OhdANM/EWvrXUilfSUp0yNvbIS/tsKR9OWgsP1HrU3T/vVjXSFfScr0YF0xaVaSMmfV1xXalaSM0uuKhb/dJ0Nhf0VvdpNJOKoagMDfftOgZEaYReImk5BAK6lj7jlp07SraqsmPpjAglrXJawbNw6FNvRx1x2gTgKtqcA/ctemTORPFyAtQ4VlpZ6pwAv4e0q+y2QZ6EWTj1eCA9aRxufV8wHSF+t2wCEBLmhLN9+KrF90nptq6gwqK//EUW4dMGsm3RtgFgey32FyRPmLuwKczqn9SVZxWiJdG6pUU5A46Wk5JrWFHcTJnnbndos4ivuWqo3F6+ogTqqngi+EECROZgkovj5HlDh5OTn4Glth4jRpB3N8GWoTRRUnm7iNJG3k20A0eHIvDmdO8PJT8rCZpFeHqzxiMYh8hMtJQR0T20Ow+ZKPgr0UF5PihMpTnJyT3SeQOBnFyTQbOFdxMtpw0MRN+IqTMC5pznHtqyWNuES4tg8Ka7TYeKFINJl6Lz+kGQdH4eslbeTkSVHQz363IHwfRzcUIqGbb5khfNI15SyLFif8SpI+Z42fOOHNHBjiC9zErQVrs5gt4yDuIlgcromXFHGiuznAihO8F8CKExy/ZAuf/C8OXtz/c65ZHMM1Q4Hg1XLEbtlllsPuBhzEavsYs+dnd0d48xv+OWzkCO+CxnRNwAnhoUuxKUPNCL/IWgCKE5+5Dqftn/jY3hpMnIRmn/RpDLyQkNTAHv7qioxLLHQ3AvGcJGjjnmZPipRUG6ZUBg7IuVplj+51YSVFm8B89CZ0OeI6xC7ZkdYXGcIFk/XiIM49EtsidwgTMSKzske2DyY3nVSum3KWqo12YB5n6fw2TFabVTKcz9MZZfK37AR10oKJNIhD36mexCzHD3fBd/v//kB+wZLdatN1FU9aHqLvVu2VhRCNB5tLp9cBaVBAD5rDhbKSEcvgd7uZSxfuMAd4pycRYns7aA/6sGQJ5EwwMUO4jxogDFrHrAH90Q4x/SD7DVaLA1fdXEC9Oo9hW7SWjj9z3Hgcj3/Wft80J5OJafq+Mx7jMp0ms5fngbcEe23Lhvr3vrccolbD69A2UHuz9WyFpkJzlOd2Xq3js0K7uR3FV1Qbxs/0K+ha4xwn/TVnVvqxl5B0kTrZ5bFXLCo3ZT4DVngrz9LnkKb2YPl85cU9i0LtkMPCzHwb8CPaqsjTIH9Rf5G1Nr9NIn/Hu2zLNdjO6Un2+v7WSoXadD+dJ9u9MEnLOO2e+Y7qfG2pQxYAFmhNf4iIhikz6UREVJTpkCUi0qfMpBOgTUKePRliAtAqdOn5EJW9ocikExNcl3Rl1YLFrxFdCWhdD0RlACgx6UQlTCnRppSk9ePlnCYbOxjs3CDaJPMzyUhWYtK12JhGselUI2KW4xtBy19FdP0HCQ1ZvZ/2tvlebRraDfcFCnTbw92IbDyyQMHUw6VwKvAtA2Q8YUUV3RkbyIco8AGYehbft0fvF1px/bZASj5UI7V8ooQ1krqoXT2AB8AqUy7qYpBTufMD/6JnyR4bL20aGl4cu3HsGQv8f+WUmlqAx/eObdJGerycVzftr7kdT5BZvc5LUSz0B8efU26I8AVH26gpa3gdbRECzecpA/jAWtzyrOv9/syA5Cw0H9T/KNtiOADf8vxmltZiqP6dvEXwya3pG2AeK5c0s+FWdZTiGV4KkrTqjfiPB8NOukdXm0ptus+WJ3yv/IWyZVhO9xocj9hQ6WNkPnuxz6Yk7/Ec0NBsPjeejqTD3t0g42UzyZ0D0En3u4X/2jTuHnq+/z7YL/8jDPmry3N0w+5f0fjZU/LlP3ejocN7zmNurH78K25fmhj9hi42gktUSZhke7XLsc34Ic6GN8rjgWDBPyx7k5ew3YrJ1lsQx0aRt1ZQPYt1IFAgMlRlvKPo5YZlBr1CYpmQN1BEE6n6QaUcb8WazrDfqJEQ1cxkQHso0A4pZW4tJFN9QL6nD11dge2aEtOz580e2WkeeYqt+jRYznZ338yq+XuXdHnfhY4il/pdKe8SyuRhcCGsvDmFnKvO1Cp/9go6IYygrvB6vI6UQGYEXPqzrzWBaz6qwN1iZ/DuJvg9R1f0prLrWa+H5qjtlGD3dxvftX/ofq9EKg01U9Igpts7rzmkCT3b0AVJFIyolD042KEyn4IfZ1gPRhnTB47jh7HbeJfaxDlys8JkJ3/Y47n5r8AXpPHA3MZuYGcl3rPvz/N5vb6ejsev/eVf+4LRlcO/y/7rdL2uz5/fszSdz2+3W7KJXIPH/Y8T2zxuAESwjsIueSHmgLRMHYq0fuNMxCJir8qRyZW4IL1guoNqgMXC545iqV1A9nlkY0N4tvdUXUGaOROEdI0+jccy5xY/1RDbA/HA7yoIyb7hABwKXvkjq/0Q1JEzxk0dCV5Gkjzi5fO6O8f9GtTOLvLb2VqptYEuuLNWLXnFEfsLP8ujJRTb8y0tvzyxn85O6vmKW7HdCF/WTUvka9u76OiyEwiq3nrwVyujizu5nKKmQ3Yo8MRxyuc4+2eEmjnMEEmwVSZ3HlkCSLKhKeZr7itXJz1sTXWXbxZLQfxx5/Wow9c6nd9WQWzoLFc4zsKIg9VtPltzG6qXDuvkfp0Ol8HAjb1w4jjTEa8IjzWaOs4k9GJ3ENjJ/HwkaauC4ka7C+znmyAOdV9urMry9TAe2Cs69zALs5CqO29iHTr+NvbjJalvnzvRBNPu1C0YwxfHIImLFk5YS0ntt6uOsIJFS+umlyTbpncXKXrBOzaaPLhX5xk3776VvoRxsBUM5YMBUt0VvICtDQvdFah66EGoU/qtFYwRhterEaqrSm8uPcfVwYmqtCitKmtlegARYKZt2krvbiDZvK7Ebdqe6s59em05f/3+8CnS+R9A+OdMheA2vreMbS9fW465byv+GfU4aWmcVLT9B6SHoiRiK5bKAAAAAElFTkSuQmCC";
+				}
+				else if(canvas.id == "BlackQueen"){
+				
+					canvas.src="data:image/png;base64,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";
+			
+				}
+			
+				else if(canvas.id == "BlackKing"){
+			
+					canvas.src="data:image/png;base64,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";
+			
+				}
+			
+				else if(canvas.id == "BlackPawn"){
+		
+					canvas.src="data:image/png;base64,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";
+				
+				}
+			
+				else if(canvas.id == "WhiteRook"){
+					
+					canvas.src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAADRCAMAAAAquaQNAAAAh1BMVEX39/cAAAD////8/Pzm5ubw8PAfHx+YmJhMTEyhoaFiYmKysrIzMzOIiIiVlZXj4+PT09OdnZ3a2tre3t7IyMh4eHhra2urq6vNzc3y8vK9vb0ODg7BwcGnp6cQEBAVFRWOjo5eXl6CgoIqKipDQ0Nzc3NpaWlISEg7OztUVFQwMDBfX18iIiKnNzaZAAAGcUlEQVR4nO2da1viOhCAS0JB7HJHudiqoHjE9f//vlNE0qS3RJhMZh/n/eY+O01emqZNmk6iiGEYhmEY5l9AtnBJzBWRfgRLiHGaDPr9kaJ/ZDodZMtksxqLulocY7JpX486heVxeWAemU66QtRFdr8ijbBjzFdpi0lcFwPN3047w6qyfLPEnNitq8I7S8zBu6+1Cp3OXfl3F89Owp3OTTlSTn9eGjSyZ694+SRLR+FOp1uKFPbSXnxfy7FDveNSzNzZeCV/XppnYafaz80QuXE2Tk1jOQlvLFcOdZiV6r10Nt6UIhcOMeUWBW3sUodJqd6Di41dWkf52oc2Ti8wtne4Z5JSZOIQM/ZsrOowrvTI6vSXjfvqdNT3q3JsNV5USlOXeKnXgMbJeNVo3HBQu3G5E9eMZ35vT0UvVGlMhfHih8aRMl42GU9oG5fvMe7GWZNxRQvPOHMw3ghjfCNUz2U1HpQiVV9duVgL48rph8XJeLhJdDZ7Z+N9KXLYXBop40asxu6RJIztj2NNj0fdn0eSMJ5dbGwfMFRGzoVx5cYFS4vxJfU+H9UaWQ1BM1bPyDUPdw+Waj80Dd7F+79pLO4t1b5vMpYjS+ShEknC2Dp2bh7lxJbmUbUqjCuP3LC0Xcf58/HbU0u1WzpVGd81ze88vBxGlWd4KsZ5wxZR3D0y7irinPU677Raa1YXmYeuIylq54OpGOPBxv4Kah474cLG/gpKyBmnv87Y9zne/F7jrgjLDMtYzVf/dxOWVyxjl3cSuPgeSbi8d8LFt7HL2z5cfM/62Kd2sPH8FsZhEg6bpqkkKKR1ggaZrf8VTtvQjgZb77752H1oFNk2X/PwzWPO05meifr34386B7Qd0/hriLGeKxLGe+zHhVyvv+Y4Tny/MYLAXJb3VYpMDeMERThXnhvTWVOkYvNfUxiTnk9zvJKjg3kt4ayPlLFR7AGp2BPmMrzeDOPHFiujRT+jneDv4s0lMAgXlDAX0CyQhfMm1jXuzHeeV/7KaKsX99qwiMZvHeSdXod3r3UQM6Oz3AXw/aqGucAsNZc0/Ij2gqTIjJI26C1a1WT8YfQls0kjMxvzFsbGOzy/rcmmHO072OyQvhVoQrgsJIQkXItWyvNPRN+PcXDhY8t2+woCgn3gFn2m1JP6A2vgYEfMHL6euJoPvIGDHYkxGYQ6cLCCYkwKZbxPoLklbjy94lGzlmJcGtrRRBn3oS+2YloN+MBXwsZwsDEV2BgONqYCG8PBxlRgYzjYmApsDAcbU4GN4WBjKrAxHGxMBTaGg42pwMZwsDEV2BgONqYCG8PBxlRgYzjYmApjNgaDjanAxnCwMRXYGA42pgIbw8HGVGBjONiYCmwMBxtTgY3hYGMqsDEc5I0HIHmqdIh+qamMe3+g6RE39khoRwOJYUzqo3r5aq/w1fyllDjhYK8vAHsyynKLItzp7IgoC7ycL9iZ5uoRmOmb8PI2tghrmdh6b7c+0NvQMriykSHVV6Z2PYV06GxVRsrOmg1rYDAyo6dBlY2Mjh43PjRyVXpOSt5eEX2fX6+5wo1Ub573lGyrhp5L0XPGTiMHWKjUgkZT8351ib5WWhxEWejdCUIPqt8VPj1vbF2LsesAyl1Sv/O/I5RXQurb0CE9CYnbosgDdrs20syNsO6Q8qYo9A35trzWEu/i5II/8VIUizuQ0vdY2EFnXWtLyKb/0n1EZX0GoLccIJLpGaTxHrGFkbg6IJ63hFHIjb0uSDTvSwqKwJnVcgFp5kvYdv3F4xXHeB3as+AFx9i+lzUaTzjGlLZ4wumsKRmjCGtf+sTdMMS7cxV8b+BVMh6EmmMr3iljG4eab5LKGGdmgI3xYWPfsDE+bOyb32N8nmtSI4kMcYbLnO4qnkDOVfDhu06zaf+IKu729Dc+UzUnMRz1p1mSpBP4DUUEvc2tTRJgZYm1vc/lAF/S4k9oISvAJ1lQ2/a4yjOw8Ye9yMDcwY5dxYu9yMAAz+QKjE26ruMe2PjJXmRgoI3Ps/K7KKaF2uMS2vj8S2K+LHZCvfbzZkxqJXvExoDHZWMysDHYcX+xcah5jya8Gz9+9mjx+eDZmC5sfK3x7xstbkMLWYGeEXi2FxkY4K/b5Sy0kBXoJYvGxygUgV+iIaP5ZJVukmSZZYPB1HgdMbqUltcONdQsxVX4WYcb+vGqFR/CDMMwDMMwQPwPsK6jq2KN6J8AAAAASUVORK5CYII=";
+			
+				
+				}
+			
+				else if(canvas.id == "WhiteKnight"){
+				
+					canvas.src="data:image/png;base64,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";
+				
+				}
+			
+				else if(canvas.id == "WhiteBishop"){
+				
+					canvas.src="data:image/png;base64,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";
+				
+				}
+			
+				else if(canvas.id == "WhiteQueen"){
+					
+					canvas.src="data:image/png;base64,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";
+		
+				}
+			
+				else if(canvas.id == "WhiteKing"){
+			
+					canvas.src="data:image/png;base64,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";
+				
+				}
+			
+				else if(canvas.id == "WhitePawn"){
+			
+					canvas.src="data:image/png;base64,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";
+				
+				}
+				else if(canvas.id == "Empty"){
+					
+					// case when square is white 
+					if(is_in(parseInt(canvas.getAttribute("name")),whiteSquares)){
+						canvas.src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDRUPDw8VFRUVFRUVFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ0NFSsZFR0rKy0tKysrKystKy0tLSsrNy03KystLSsrKy0tKzctKy0tKy0rLS0rKy0rLS0rKysrK//AABEIAMQBAQMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAJRABAAIBAgUEAwAAAAAAAAAAAAHwETGhIUGRsdECUWHhcYHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAwDAQACEQMRAD8A7gAgl/KiACgCXVUugHRS8kuoF4gAAAF9wFLoX3LqAACAKAhdVBLqqXQAvAFAAAAAx8icAFAAAAAAABFAAABFARQAvJFAS2FAAABLot0AAAAAAAAAMgKACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH7AAAAAAAABQAAAAAARQAAAAAAAAAAAAABAAAAAAUAAAAAAEUAQBUAAAAABRAUQBQAAAAAABAAAMgAAAAoAAACCoCoACoAAIAAACgAACgAAAAAAAAACAAAAoAAAAACKIAoAgqIAqAqKiioogigoAAAAAAACGQwFAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQFRAEAAAAAAAAUAAAAAlAAAAUAAAAAAABAAAADAAAAAAAAoAAAAAACIKJkBRDIKIAoCgAAAAAIAAAAomFBBAFEBQAAEBRAFBAATKCiEAsjOVBRMqCiKoCAKIoCoAogIogCDWYBUAAELdgVC28gAJJkAygC5EMgAZBJORMHqQCJI1MAoQYUFymQFEAUIIvUALehbsCiW3mtt5AAAvEZ4e4It2S7AKs634QAL3L2QEX7RAVS9vIACALKABBOoAHqACVQBZEAWDwAI15QBYu5F2AQi7F2+wFW/wu+ABrACo/9k=";
+					}
+					// case when square is black
+					else if(is_in(parseInt(canvas.getAttribute("name")),blackSquares)){
+						canvas.src="https://coolbackgrounds.io/images/backgrounds/black/pure-black-background-f82588d3.jpg";
+					}
+					
+				}
+			}
+		}
+	}
+	
+	function win(){
+		
+		for(row=1;row<=8;row++){
+			for(col=1;col<=8;col++){
+				
+				canvas = document.getElementsByName(row.toString().concat(col.toString()))[0];
+				
+				if(canvas.id == "BlackKing"){
+					whiteWin=false;
+				}
+				if(canvas.id == "WhiteKing"){
+					blackWin=false;
+				}
+			}
+		}
+		
+		
+		if(whiteWin){
+			alert("White wins");
+			location.reload();
+		}
+		
+		if(blackWin){
+			alert("Black wins");
+			location.reload();
+		}
+		
+		whiteWin=true;
+		blackWin=true;
+	
+	}
+	
+      function setUsername() {
+         socket.emit('setUsername', document.getElementById('name').value);
+      };
+      var user;
+      socket.on('userExists', function(data) {
+         document.getElementById('error-container').innerHTML = data;
+      });
+      socket.on('userSet', function(data) {
+         user = data.username;
+         div.innerHTML = '<input type = "text" id = "message">\
+         <button type = "button" name = "button" onclick = "sendMessage()">Send</button>\
+         <div id = "message-container"></div>';
+      });
+      function sendMessage() {
+         var msg = document.getElementById('message').value;
+         if(msg) {
+            socket.emit('msg', {message: msg, user: user});
+         }
+      }
+      socket.on('newmsg', function(data) {
+         if(user) {
+            document.getElementById('message-container').innerHTML += '<div><b>' + 
+               data.user + '</b>: ' + data.message + '</div>'
+         }
+      });
+	  
+	 
+		
+		
+
+  </script>
+ </body>
+ </html>
