@@ -19,3 +19,6 @@ In order to win you will have to make a move to capture the opponent's king dire
 There is no warning to show a player is in check
 
 No Enpessant pawn rule 
+
+# LICENSE:
+NOT FOR COMMERCIAL USE If you intened to use any of my code for commercial use please contact me and get my permission. If you intend to make money using any of my code please ask my permission.
