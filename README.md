@@ -3,7 +3,7 @@
 Description: A multiplayer chess game that can support infinite players who can all interact in the same game.The game also has a built in chat.The server uses Node.js modules http.express, and sockets.io to communicate with the clients.
 
 # Required 
-  Node.js installed, including experss, and sockets.io installed in the same folder as your client and server side code 
+  Node.js installed, including express, and sockets.io installed in the same folder as your client and server side code 
   
 # To make the code work
 
@@ -18,7 +18,8 @@ In order to win you will have to make a move to capture the opponent's king dire
 
 There is no warning to show a player is in check
 
-No Enpessant pawn rule 
+No En Passant pawn rule 
 
 # LICENSE:
-NOT FOR COMMERCIAL USE If you intened to use any of my code for commercial use please contact me and get my permission. If you intend to make money using any of my code please ask my permission.
+NOT FOR COMMERCIAL USE If you intend to use any of my code for commercial use please contact me and get my permission. If you intend to make money using any of my code please ask my permission.
+
