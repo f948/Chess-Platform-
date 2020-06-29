@@ -20,6 +20,8 @@ There is no warning to show a player is in check
 
 No En Passant pawn rule 
 
+When a pawn becomes a passed pawn the computer chooses a random number 1,2,3, or 4 and decides wether the pawn becomes a queen, rook, knight, or bishop
+
 # LICENSE:
 NOT FOR COMMERCIAL USE If you intend to use any of my code for commercial use please contact me and get my permission. If you intend to make money using any of my code please ask my permission.
 
