@@ -1,6 +1,6 @@
 # Online Multiplayer Chess-
 
-Description-An online multiplayer chess game that supports infinite players. The game is hosted on a local web server that makes sure that each client's board is updated according to the state of the game. Allows for real online multiplayer play.
+Description-An online multiplayer chess server that supports infinite players. The game is hosted on a local web server where multiple games can be hosted at once on seperate rooms. Users can chat with each other and can play chess their their opponent. Each room hosts a single game with 2 players.
 
 # Required
 
