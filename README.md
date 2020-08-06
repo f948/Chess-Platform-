@@ -2,6 +2,8 @@
 
 Description-An online multiplayer chess server that supports infinite players. The game is hosted on a local web server where multiple games can be hosted at once on seperate rooms. Users can chat with each other and can play chess their their opponent. Each room hosts a single game with 2 players.
 
+Video tutorial avaliable at https://www.youtube.com/watch?v=Hq7uwJje6sg
+
 # Required
 
 Node.js 
