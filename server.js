@@ -16,6 +16,8 @@ var clients=0;
 var command 
 var date;
 
+const port = process.env.PORT || 3000
+
 app.get('/', function(req, res) {
 	
 	if(clients<50){
@@ -88,6 +90,6 @@ io.on('connection', function(socket) {
    
 });
 
-http.listen(60276, function() {
-   console.log('listening on localhost:60276');
+http.listen(port, function() {
+   console.log('listening on localhost:'+port);
 });
